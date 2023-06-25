@@ -20,11 +20,15 @@ h6 {
   font-family: var(--heading-font-family);
 }
 
+h2 {
+  font-size: 48px;
+}
+
 .hero {
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 120px 30px;
+  padding: 150px 20px;
 }
 
 .hero:before {
@@ -64,4 +68,12 @@ h6 {
   color: var(--primary-color);
   font-weight: 600;
   font-size: 26px;
+}
+
+.navbar-custom .media-icons {
+  line-height: 2;
+}
+
+.projects {
+  background: var(--tertiary-color);
 }
