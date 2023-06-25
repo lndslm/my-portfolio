@@ -11,6 +11,10 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,6 +34,58 @@
     ></script>
   </head>
   <body>
-    <h1>This is my portfolio.</h1>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">LS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link">Contact</a>
+          </div>
+          <div class="navbar-nav flex-row flex-wrap ms-md-auto">
+            <a
+              href="https://www.linkedin.com/in/linda-salim-40641364/"
+              target="_blank"
+              title="Linkedin"
+              ><i class="media-icons pe-3 fa-lg fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/lndslm" target="_blank" title="Github"
+              ><i class="media-icons pe-3 fa-lg fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/lndslm/"
+              target="_blank"
+              title="Instagram"
+              ><i class="media-icons pe-3 fa-lg fa-brands fa-instagram"></i>
+            </a>
+            <a href="mailto:lindasalim.ca@gmail.com"
+              ><i class="media-icons pe-3 fa-lg fa-regular fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="hero">
+      <h1 class="d-none">Linda Salim</h1>
+      <h2 class="d-none">Frontend developer based in Montreal, Canada</h2>
+      <img
+        src="/images/hero-card-dark-blue.png"
+        alt="hero image"
+        class="presentation img-fluid"
+      />
+    </div>
   </body>
 </html>

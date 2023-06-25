@@ -1,8 +1,67 @@
-/*font-family: 'Open Sans', sans-serif;
-font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
-    "Cantarell", "Open Sans", sans-serif;
-*/
+:root {
+  --heading-font-family: "Open Sans", sans-serif;
+  --default-font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+  --primary-color: #2f3c4f;
+  --secondary-color: #506f86;
+  --tertiary-color: #cadee8;
+}
 
-h1 {
-  color: red;
+body {
+  font-family: var(--default-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 120px 30px;
+}
+
+.hero:before {
+  content: "";
+  background-image: url(/images/hero-background.jpg);
+  background-size: cover;
+  opacity: 0.8;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.hero .presentation {
+  position: relative;
+  opacity: 1;
+}
+
+.navbar-custom {
+  background-color: var(--secondary-color);
+  padding: 0px;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .media-icons {
+  color: var(--tertiary-color);
+}
+
+.navbar-custom .active {
+  color: var(--tertiary-color) !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 26px;
 }
