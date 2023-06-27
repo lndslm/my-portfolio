@@ -118,7 +118,7 @@ h5 {
   text-underline-offset: 4px;
 }
 
-@media (max-width: 912px) {
+@media (max-width: 768px) {
   .hero,
   .navigation-cards {
     padding: 30px 12px;
