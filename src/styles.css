@@ -109,11 +109,19 @@ h5 {
   background: var(--secondary-color);
   border: var(--secondary-color);
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   padding: 10px 20px;
 }
 
 .btn:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+@media (max-width: 912px) {
+  .hero,
+  .navigation-cards {
+    padding: 30px 12px;
+    height: 100%;
+  }
 }
