@@ -118,16 +118,6 @@ h5 {
   text-underline-offset: 4px;
 }
 
-/*.boogie-content {
-  width: 100% !important;
-  height: auto !important;
-}*/
-
-.boogie-content {
-  width: 100%;
-  height: auto;
-}
-
 .certification-gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
