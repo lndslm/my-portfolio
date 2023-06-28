@@ -125,3 +125,8 @@ h5 {
     height: 100%;
   }
 }
+
+.boogie-content {
+  width: 100% !important;
+  height: auto !important;
+}
