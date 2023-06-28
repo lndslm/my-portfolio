@@ -118,15 +118,32 @@ h5 {
   text-underline-offset: 4px;
 }
 
+/*.boogie-content {
+  width: 100% !important;
+  height: auto !important;
+}*/
+
+.certification-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 20px;
+}
+
+.certification-gallery img {
+  border-radius: 10px;
+  height: 100%;
+  transition: all 150ms ease-in-out;
+}
+
+.certification-gallery img:hover {
+  transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
   .hero,
   .navigation-cards {
     padding: 30px 12px;
     height: 100%;
   }
-}
-
-.boogie-content {
-  width: 100% !important;
-  height: auto !important;
 }
