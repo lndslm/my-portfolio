@@ -120,7 +120,7 @@ h5 {
 
 .certification-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
   margin-bottom: 20px;
 }
@@ -132,7 +132,7 @@ h5 {
 }
 
 .certification-gallery img:hover {
-  transform: scale(2.2);
+  transform: scale(2);
 }
 
 .skills-content {
