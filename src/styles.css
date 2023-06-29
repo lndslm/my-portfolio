@@ -32,6 +32,11 @@ h5 {
   font-weight: 600;
 }
 
+h6 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
 .hero {
   /*position: relative;
   display: flex;
@@ -142,6 +147,18 @@ h5 {
   border-radius: 5px;
 }
 
+.images-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.bg-custom {
+  background: var(--tertiary-color);
+  box-shadow: var(--box-shadow);
+}
+
 @media (max-width: 768px) {
   .hero,
   .navigation-cards {
@@ -149,20 +166,20 @@ h5 {
     height: 100%;
   }
 
-  .about-section {
+  .content-container {
     text-align: center;
   }
 
-  .about-section h2 {
+  .content-container h2 {
     margin-bottom: 25px !important;
   }
 
-  .about-section .description,
-  .about-section .skills-and-certifications {
+  .content-container .description,
+  .content-container .skills-and-certifications {
     padding: 0 30px !important;
   }
 
-  .about-section .certification-gallery {
+  .content-container .certification-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
