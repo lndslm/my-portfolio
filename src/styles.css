@@ -159,6 +159,17 @@ h6 {
   box-shadow: var(--box-shadow);
 }
 
+.btn-custom {
+  background: var(--primary-color);
+  color: white;
+}
+
+.contact-form-custom {
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+
 @media (max-width: 768px) {
   .hero,
   .navigation-cards {
@@ -181,5 +192,10 @@ h6 {
 
   .content-container .certification-gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-form-custom {
+    width: 100%;
+    padding: 10px 20px !important;
   }
 }
