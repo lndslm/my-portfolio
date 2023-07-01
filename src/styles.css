@@ -72,10 +72,16 @@ h6 {
 .navbar-custom .nav-link,
 .navbar-custom .media-icons {
   color: white;
+  transition: all 150ms ease-in-out;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .media-icons:hover {
+  color: var(--accent-color);
 }
 
 .navbar-custom .active {
-  color: white !important;
+  color: var(--accent-color) !important;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -110,17 +116,25 @@ h6 {
   padding: 100px 50px;
 }
 
-.navigation-cards .btn {
+.btn {
   background: var(--secondary-color);
   border: var(--secondary-color);
   color: white;
   font-size: 15px;
+  transition: all 150ms ease-in-out;
+}
+
+.navigation-cards .btn {
   padding: 10px 20px;
 }
 
+.send-message .btn {
+  padding: 8px 20px;
+}
+
 .btn:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  color: var(--primary-color);
+  background: var(--accent-color);
 }
 
 .certification-gallery {
@@ -157,11 +171,6 @@ h6 {
 .bg-custom {
   background: var(--tertiary-color);
   box-shadow: var(--box-shadow);
-}
-
-.btn-custom {
-  background: var(--primary-color);
-  color: white;
 }
 
 .contact-form-custom {
