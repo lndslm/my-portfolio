@@ -7,6 +7,7 @@
   --secondary-color: #506f86;
   --tertiary-color: #cadee8;
   --accent-color: #fbcb35;
+  --default-transition: all 150ms ease-in-out;
 }
 
 body {
@@ -70,13 +71,13 @@ h6 {
 }
 
 .navbar-custom .nav-link,
-.navbar-custom .media-icons {
+.media-icons {
   color: white;
-  transition: all 150ms ease-in-out;
+  transition: var(--default-transition);
 }
 
 .navbar-custom .nav-link:hover,
-.navbar-custom .media-icons:hover {
+.media-icons:hover {
   color: var(--accent-color);
 }
 
@@ -121,7 +122,7 @@ h6 {
   border: var(--secondary-color);
   color: white;
   font-size: 15px;
-  transition: all 150ms ease-in-out;
+  transition: var(--default-transition);
 }
 
 .navigation-cards .btn {
@@ -147,7 +148,7 @@ h6 {
 .certification-gallery img {
   border-radius: 10px;
   height: 100%;
-  transition: all 150ms ease-in-out;
+  transition: var(--default-transition);
 }
 
 .certification-gallery img:hover {
@@ -177,6 +178,48 @@ h6 {
   width: 80%;
   display: flex;
   margin: auto;
+}
+
+footer {
+  background: var(--secondary-color);
+  padding: 50px 0 20px 0;
+}
+
+footer .media-icons {
+  padding: 18px 11px;
+  margin: 0 10px;
+}
+
+.footer-signature {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-signature a {
+  color: white;
+  text-decoration: none;
+  transition: var(--default-transition);
+}
+
+.footer-signature a:hover,
+.index-page-footer .footer-signature a:hover {
+  color: var(--accent-color);
+}
+
+.index-page-footer {
+  background-image: url(/images/hero-background2.jpg);
+  background-size: cover;
+}
+
+.index-page-footer .media-icons {
+  background: var(--secondary-color);
+}
+
+.index-page-footer .footer-signature,
+.index-page-footer .footer-signature a {
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
