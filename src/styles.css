@@ -250,3 +250,5 @@ footer .media-icons {
     padding: 10px 20px !important;
   }
 }
+
+/*reger le footer en bas de page (contact.html / selon viewport) et faire media queries pour le Galaxy Fold (voir Slack)*/
