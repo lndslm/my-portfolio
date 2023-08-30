@@ -236,9 +236,13 @@ footer .media-icons {
     margin-bottom: 25px !important;
   }
 
-  .content-container .description,
-  .content-container .skills-and-certifications {
+  .content-container .description-and-skills,
+  .content-container .certifications {
     padding: 0 30px !important;
+  }
+
+  .content-container .certifications-section {
+    padding-top: 10px !important;
   }
 
   .content-container .certification-gallery {
