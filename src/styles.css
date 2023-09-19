@@ -23,18 +23,33 @@ h5 {
   font-family: var(--heading-font-family);
 }
 
-h2 {
-  font-size: 48px;
+.navbar-custom {
+  background-color: var(--secondary-color);
+  padding: 0px;
 }
 
-h3 {
-  font-size: 36px;
-  font-weight: 600;
+nav .navbar-brand {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 26px;
 }
 
-h5 {
-  font-size: 22px;
-  font-weight: 600;
+nav .nav-link,
+nav .media-icons {
+  color: white;
+  transition: var(--default-transition);
+  line-height: 2;
+}
+
+nav .nav-link:hover,
+nav .media-icons:hover {
+  color: var(--accent-color);
+}
+
+nav .active {
+  color: var(--accent-color) !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 header {
@@ -42,7 +57,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 200px;
+  padding: 180px;
   text-align: center;
   color: var(--primary-color);
 }
@@ -82,59 +97,33 @@ header a:hover {
   color: white;
 }
 
-.navbar-custom {
-  background-color: var(--secondary-color);
-  padding: 0px;
+main {
+  background: #cadee8;
+  padding: 135px 50px;
 }
 
-.navbar-custom .nav-link,
-.media-icons {
-  color: white;
-  transition: var(--default-transition);
+main h3 {
+  font-size: 36px;
+  font-weight: 600;
 }
 
-.navbar-custom .nav-link:hover,
-.media-icons:hover {
-  color: var(--accent-color);
+main .card-custom {
+  border: none;
+  box-shadow: var(--box-shadow);
 }
 
-.navbar-custom .active {
-  color: var(--accent-color) !important;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.navbar-custom .navbar-brand {
+main .card-body {
   color: var(--primary-color);
-  font-weight: 700;
-  font-size: 26px;
 }
 
-.navbar-custom .media-icons {
-  line-height: 2;
-}
-
-.section-images {
+main .section-images {
   width: 100%;
   height: 30vh;
   object-fit: contain;
 }
 
-.card-custom {
-  border: none;
-  box-shadow: var(--box-shadow);
-}
-
-.card-custom .card-body {
-  color: var(--primary-color);
-}
-
-.navigation-cards {
-  background: #cadee8;
-  padding: 100px 50px;
-}
-
-.btn {
+main .btn {
+  padding: 10px 20px;
   background: var(--secondary-color);
   border: var(--secondary-color);
   color: white;
@@ -142,51 +131,48 @@ header a:hover {
   transition: var(--default-transition);
 }
 
-.navigation-cards .btn {
-  padding: 10px 20px;
-}
-
-.send-message .btn {
-  padding: 8px 20px;
-}
-
-.btn:hover {
+main .btn:hover {
   color: var(--primary-color);
   background: var(--accent-color);
 }
 
-.certification-gallery {
+section h2 {
+  font-size: 48px;
+}
+
+section .certification-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
   margin-bottom: 20px;
 }
 
-.certification-gallery img {
+section .certification-gallery img {
   border-radius: 10px;
   height: 100%;
   transition: var(--default-transition);
 }
 
-.certification-gallery img:hover {
+section .certification-gallery img:hover {
   transform: scale(2);
 }
 
-.skills-content {
+section .skills-content {
   padding: 10px;
   margin: 5px;
   background: var(--accent-color);
   border-radius: 5px;
 }
 
-.images-content {
+section .project h5 {
+  font-weight: 600;
+}
+
+section .project .images-content {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
-}
-
-.bg-custom {
   background: var(--tertiary-color);
   box-shadow: var(--box-shadow);
 }
@@ -195,6 +181,22 @@ header a:hover {
   width: 80%;
   display: flex;
   margin: auto;
+  background: var(--tertiary-color);
+  box-shadow: var(--box-shadow);
+}
+
+form .btn {
+  padding: 8px 20px;
+  background: var(--secondary-color);
+  border: var(--secondary-color);
+  color: white;
+  font-size: 15px;
+  transition: var(--default-transition);
+}
+
+form .btn:hover {
+  color: var(--primary-color);
+  background: var(--accent-color);
 }
 
 footer {
@@ -205,33 +207,35 @@ footer {
 footer .media-icons {
   padding: 18px 11px;
   margin: 0 10px;
+  color: white;
+  background: var(--secondary-color);
+  transition: var(--default-transition);
 }
 
-.footer-signature {
+footer .media-icons:hover {
+  color: var(--accent-color);
+}
+
+footer .footer-signature {
   color: white;
   font-size: 12px;
   text-align: center;
   margin-top: 30px;
 }
 
-.footer-signature a {
+footer .footer-signature a {
   color: white;
   text-decoration: none;
   transition: var(--default-transition);
 }
 
-.footer-signature a:hover,
-.index-page-footer .footer-signature a:hover {
+footer .footer-signature a:hover {
   color: var(--accent-color);
 }
 
 .index-page-footer {
-  background-image: url(/images/hero-background2.jpg);
+  background-image: url(/images/header_v3.png);
   background-size: cover;
-}
-
-.index-page-footer .media-icons {
-  background: var(--secondary-color);
 }
 
 .index-page-footer .footer-signature,
@@ -241,7 +245,7 @@ footer .media-icons {
 
 @media (max-width: 768px) {
   header,
-  .navigation-cards {
+  main {
     padding: 30px 12px;
     height: 100%;
   }
