@@ -177,6 +177,14 @@ section .project .images-content {
   box-shadow: var(--box-shadow);
 }
 
+.carousel {
+  border-radius: 10px;
+  background: var(--tertiary-color);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
 .contact-form-custom {
   width: 80%;
   display: flex;
