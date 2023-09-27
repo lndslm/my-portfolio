@@ -181,8 +181,21 @@ section .project .images-content {
   border-radius: 10px;
   background: var(--tertiary-color);
   box-shadow: var(--box-shadow);
-  padding: 20px;
+  padding: 20px 50px;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.carousel .carousel-control-prev {
+  color: var(--primary-color);
+  position: absolute;
+  left: -70px;
+}
+
+.carousel .carousel-control-next {
+  color: var(--primary-color);
+  position: absolute;
+  right: -70px;
 }
 
 .contact-form-custom {
