@@ -158,6 +158,12 @@ section .project .images-content {
   height: 400px;
   background: var(--tertiary-color);
   box-shadow: var(--box-shadow);
+  transition: all 150ms ease-in-out;
+}
+
+section .project .images-content:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
 }
 
 .boogie-video {
