@@ -282,20 +282,36 @@ footer .footer-signature a:hover {
 
 @media (max-width: 768px) {
   header,
-  main,
-  section {
-    padding: 30px 12px;
+  main {
+    padding: 30px 0;
     height: 100%;
   }
 
-  .content-container h2 {
-    margin-bottom: 25px !important;
+  .about,
+  .certifications,
+  .projects,
+  .contact {
+    padding: 30px 20px;
   }
+
+  .certifications .carousel {
+    padding: 10px 20px;
+    margin-top: 30px;
+  }
+
+  /*.content-container h2 {
+    margin-bottom: 25px !important;
+  }*/
 
   /*.contact-form-custom {
     width: 100%;
     padding: 10px 20px !important;
   }*/
+
+  .container {
+    width: 100%;
+    margin: 10px auto;
+  }
 }
 
 @media (max-width: 992px) {
@@ -306,11 +322,23 @@ footer .footer-signature a:hover {
   .contact .contact-form-custom {
     width: 100%;
   }
+
+  .certifications .carousel .carousel-control-prev {
+    left: -10px;
+  }
+
+  .certifications .carousel .carousel-control-next {
+    right: -10px;
+  }
 }
 
 @media (max-width: 1200px) {
   section .skills {
     margin-top: 30px;
+  }
+
+  .certifications .carousel h5 {
+    margin-top: 10px;
   }
 }
 /*regler le footer en bas de page (contact.html / selon viewport) et faire media queries pour le Galaxy Fold (voir Slack)*/
