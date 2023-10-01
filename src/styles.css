@@ -10,18 +10,15 @@
   --default-transition: all 150ms ease-in-out;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-footer {
+.container {
+  width: 1200px;
+  margin: 10px auto;
 }
 
 body {
   font-family: var(--default-font-family);
-  color: var(--primary-color) !important;
-  margin: 0 0 120px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
 }
 
 h1,
@@ -33,12 +30,12 @@ h5 {
 }
 
 .navbar-custom {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 0px;
 }
 
 nav .navbar-brand {
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   font-weight: 700;
   font-size: 26px;
 }
@@ -107,12 +104,12 @@ header a:hover {
 }
 
 main {
-  background: #cadee8;
-  padding: 135px 50px;
+  background: var(--tertiary-color);
+  padding: 100px 50px;
 }
 
 main h3 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 600;
 }
 
@@ -149,69 +146,85 @@ section h2 {
   font-size: 48px;
 }
 
-section .skills-content {
+.about,
+.projects {
+  background: white;
+  padding: 50px 50px;
+}
+
+.certifications,
+.contact {
+  background: var(--tertiary-color);
+  padding: 50px 50px;
+}
+
+.about .boogie-video {
+  width: 100%;
+  aspect-ratio: 21/9;
+}
+
+.certifications .skills-content {
   padding: 10px;
   margin: 5px;
   background: var(--accent-color);
   border-radius: 5px;
 }
 
-section .project h5 {
+.certifications .carousel {
+  border-radius: 10px;
+  background: white;
+  box-shadow: var(--box-shadow);
+  padding: 20px 30px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.certifications .carousel .carousel-control-prev {
+  color: var(--primary-color);
+  position: absolute;
+  left: -50px;
+}
+
+.certifications .carousel .carousel-control-next {
+  color: var(--primary-color);
+  position: absolute;
+  right: -50px;
+}
+
+.projects h5 {
   font-weight: 600;
 }
 
-section .project .images-content {
+.projects .project-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 300px;
   background: var(--tertiary-color);
   box-shadow: var(--box-shadow);
   transition: all 150ms ease-in-out;
 }
 
-section .project .images-content:hover {
+.projects .project-image:hover {
   opacity: 0.7;
   transform: scale(1.05);
 }
 
-.boogie-video {
-  width: 100%;
-  aspect-ratio: 21/9;
+.projects .project-description {
+  font-size: 14px;
 }
 
-.carousel {
-  border-radius: 10px;
-  background: var(--tertiary-color);
-  box-shadow: var(--box-shadow);
-  padding: 20px 50px;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.carousel .carousel-control-prev {
-  color: var(--primary-color);
-  position: absolute;
-  left: -70px;
-}
-
-.carousel .carousel-control-next {
-  color: var(--primary-color);
-  position: absolute;
-  right: -70px;
-}
-
-.contact-form-custom {
-  width: 80%;
+.contact .contact-form-custom {
+  width: 70%;
   display: flex;
   margin: auto;
-  background: var(--tertiary-color);
+  background: var(--secondary-color);
   box-shadow: var(--box-shadow);
 }
 
 form .btn {
   padding: 8px 20px;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   border: var(--secondary-color);
   color: white;
   font-size: 15px;
@@ -226,13 +239,6 @@ form .btn:hover {
 footer {
   background: var(--secondary-color);
   padding: 20px 0 20px 0;
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 120px;
-  width: 100%;
-  overflow: hidden;
 }
 
 footer .media-icons {
@@ -276,22 +282,29 @@ footer .footer-signature a:hover {
 
 @media (max-width: 768px) {
   header,
-  main {
+  main,
+  section {
     padding: 30px 12px;
     height: 100%;
-  }
-
-  .content-container .description {
-    text-align: center;
   }
 
   .content-container h2 {
     margin-bottom: 25px !important;
   }
 
-  .contact-form-custom {
+  /*.contact-form-custom {
     width: 100%;
     padding: 10px 20px !important;
+  }*/
+}
+
+@media (max-width: 992px) {
+  .about .description p {
+    padding-bottom: 15px;
+  }
+
+  .contact .contact-form-custom {
+    width: 100%;
   }
 }
 
