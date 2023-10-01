@@ -52,12 +52,6 @@ nav .media-icons:hover {
   color: var(--accent-color);
 }
 
-nav .active {
-  color: var(--accent-color) !important;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 header {
   background-image: url(/images/header_v3.png);
   background-size: cover;
@@ -222,7 +216,7 @@ section h2 {
   box-shadow: var(--box-shadow);
 }
 
-form .btn {
+.contact form .btn {
   padding: 8px 20px;
   background: var(--primary-color);
   border: var(--secondary-color);
@@ -231,7 +225,7 @@ form .btn {
   transition: var(--default-transition);
 }
 
-form .btn:hover {
+.contact form .btn:hover {
   color: var(--primary-color);
   background: var(--accent-color);
 }
@@ -299,15 +293,6 @@ footer .footer-signature a:hover {
     margin-top: 30px;
   }
 
-  /*.content-container h2 {
-    margin-bottom: 25px !important;
-  }*/
-
-  /*.contact-form-custom {
-    width: 100%;
-    padding: 10px 20px !important;
-  }*/
-
   .container {
     width: 100%;
     margin: 10px auto;
@@ -341,4 +326,3 @@ footer .footer-signature a:hover {
     margin-top: 10px;
   }
 }
-/*regler le footer en bas de page (contact.html / selon viewport) et faire media queries pour le Galaxy Fold (voir Slack)*/
